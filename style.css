@@ -1,0 +1,183 @@
+/* General Styling */
+html {
+  font-family: monospace;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  border: 2px solid white;
+  padding: 0;
+}
+
+td {
+  border: 2px solid black;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Highlight Animation */
+.highlight {
+  background-color: crimson;
+  color: white;
+  box-shadow: 2px 2px 3px rebeccapurple;
+  animation: colors 3s;
+}
+
+@keyframes colors {
+  0% {
+      background-color: aquamarine;
+  }
+  50% {
+      background-color: yellow;
+  }
+  80% {
+      background: rebeccapurple;
+  }
+  100% {
+      background-color: crimson;
+  }
+}
+
+/* Player Styling */
+.playerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+#player {
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* Add Cells Button */
+#addCells {
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Win Size Input */
+#winSize {
+  width: 20px;
+  margin-left: 20px;
+  text-align: left;
+  padding: 5px;
+}
+
+/* Winners Display */
+#winners {
+  display: none;
+}
+
+/* Range Styling */
+.range {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+/* Display Players */
+#displayPlayers {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 5px;
+}
+
+/* Buttons */
+button {
+  border: none;
+  padding: 5px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+}
+
+/* Player Symbols */
+.o {
+  color: navy;
+  cursor: none;
+}
+
+.x {
+  color: crimson;
+  cursor: none;
+}
+
+.Δ {
+  color: forestgreen;
+  cursor: none;
+}
+
+.Ω {
+  color: yellowgreen;
+  cursor: none;
+}
+
+/* Congratulations Message */
+.congratsContainer {
+  text-align: center;
+  z-index: 1000;
+  position: absolute;
+  background: linear-gradient(180deg, white 0%, crimson 100%);
+  border: 1px black;
+  border-radius: 0 0 15px 15px;
+}
+
+.congratsText {
+  font-size: 2rem;
+  color: white;
+  animation: fadeBounce 3s;
+  display: none;
+}
+
+@keyframes fadeBounce {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}

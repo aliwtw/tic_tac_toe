@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe ++</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <h1>Tic Tac Toe ++</h1>
+
+    <!-- Congratulations Message -->
+    <div class="congratsContainer">
+        <div id="congrats" class="congratsText"></div>
+    </div>
+
+    <!-- Game Grid Container -->
+    <div id="gridContainer"></div>
+
+    <!-- Current Player Display -->
+    <div class="playerContainer">
+        <h3>Current Player</h3>
+        <div id="player"></div>
+    </div>
+
+    <!-- Extend Grid Button -->
+    <div class="playerContainer">
+        <h3>Extend Grid</h3>
+        <div id="addCells">+</div>
+    </div>
+
+    <!-- Points to Win Input -->
+    <div class="playerContainer">
+        <h3>Points to Win</h3>
+        <label for="winSize" hidden>Input size of line to win</label>
+        <input type="number" value="3" id="winSize" min="3">
+    </div>
+
+    <!-- Number of Players Selector -->
+    <div class="playerContainer">
+        <h3>Number of Players</h3>
+        <div class="range">
+            <label for="players" hidden>Select number of players</label>
+            <input type="range" value="2" id="players" min="2" max="4" step="1">
+            <h3 id="displayPlayers">2</h3>
+        </div>
+    </div>
+
+    <!-- Winners Display -->
+    <div id="winners" class="playerContainer">
+        <h3>Winners&nbsp;|</h3>
+        <h3></h3>
+    </div>
+
+    <!-- Reset Button -->
+    <div class="playerContainer">
+        <button id="reset">Reset</button>
+    </div>
+
+    <p>&COPY;AliWtw</p>
+</body>
+
+</html>
